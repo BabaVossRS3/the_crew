@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="nav_bar">
+            <div class="logo">
+                <div class="badge"><img class="honda_badge" src="pics\honda_badge.png"></div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="crew.html">Crew</a></li>
+                    <li><a href="action.html">Action</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <div class="insta">    
+                  <img class="insta_logo" src="pics\insta_logo.png" onclick="toggleMenu()">
+                    <div class="sub_menu_wrap" id="subMenu">
+                        <div class="sub_menu">
+                            <div class="user_info">
+                                <img class="liko_prof"src="pics\liko_prof.jpg">
+                                <a class="links_inst" target="_blank" href="https://www.instagram.com/george_liko/"><p class="name_info">Likos</p></a>
+                            </div>
+                            
+                            <div class="user_info">
+                                <img class="bregu_prof"src="pics\bregu_prof.jpg">
+                                <a class="links_inst" target="_blank" href="https://www.instagram.com/giwrgos_bregu/"><p class="name_info">Yoogi</p></a>
+                            </div>
+                            
+                            <div class="user_info">
+                                <img class="loumsi_prof"src="pics\tzoni_prof.jpg">
+                                <a class="links_inst" target="_blank" href="https://www.instagram.com/_loumsi/"><p class="name_info">Loumsi</p></a>
+                            </div>
+                            
+                            <div class="user_info">
+                                <img class="roni_prof"src="pics\roni_prof.jpg">
+                                <a class="links_inst" target="_blank" href="https://www.instagram.com/roniiitzr/"><p class="name_info">Ronnie</p></a>
+                            </div>
+                            
+                            <div class="user_info">
+                                <img class="zooka_prof"src="pics\zooka_prof.jpg">
+                                <a class="links_inst" target="_blank" href="https://www.instagram.com/zacharias_anestis_zm/"><p class="name_info">Zooka</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="facebook">
+                    <img class="fb_logo" src="pics\fb_logo.png" onclick="toggle2nd()">
+                    <div class="sub_menu_wrap_fb" id="sub_fb">
+                        <div class="sub_menu_fb">
+                            <div class="user_info">
+                                <img class="liko_prof"src="pics\liko_prof.jpg">
+                                <a class="links_inst" target="_blank" href="https://www.facebook.com/LikoRedjiol"><p class="liko_info">Likos</p></a>
+                            
+                            </div>
+                            
+                            <div class="user_info">
+                                <img class="bregu_prof"src="pics\bregu_prof.jpg">
+                                <a class="links_inst" target="_blank" href="https://www.facebook.com/profile.php?id=100024295412127"><p class="liko_info">Yoogi</p></a>
+                            </div>
+                            
+                            <div class="user_info">
+                                <img class="loumsi_prof"src="pics\tzoni_prof.jpg">
+                                <a class="links_inst" target="_blank" href="https://www.facebook.com/giannis.lumshi"><p class="liko_info">Loumsi</p></a>
+                            </div>
+                            
+                            <div class="user_info">
+                                <img class="roni_prof"src="pics\roni_prof.jpg">
+                                <a class="links_inst" target="_blank" href="https://www.facebook.com/ronaldotze"><p class="liko_info">Ronnie</p></a>
+                            </div>
+                            
+                            <div class="user_info">
+                                <img class="zooka_prof"src="pics\zooka_prof.jpg">
+                                <a class="links_inst" target="_blank" href="https://www.facebook.com/profile.php?id=100004576771727"><p class="liko_info">Zooka</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home">
+        <div class="quote_div">
+            <h1 class="quote">
+                "If you have everything under control,
+                you aren't going fast enough."
+            </h1>
+        </div>
+        <div class="unknown_div">
+            <h3 class="unknown">
+                -Unknown.
+            </h3>
+        </div>
+
+    </div>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+        subMenu.classList.toggle("open_menu");
+        }
+
+        let subMenu2 = document.getElementById("sub_fb");
+
+        function toggle2nd(){
+        subMenu2.classList.toggle("open_menu");
+}
+    </script>
+                
+</body>
+</html>
